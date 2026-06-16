@@ -3,124 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galiyartsstudio</title>
+<title>Galiyartsstudio | Original Fine Art</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family: Arial, sans-serif;
-background:#0f0f0f;
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:Georgia, serif;
+}
+
+body{
+background:#000;
+color:#fff;
+line-height:1.8;
 }
 
 header{
-padding:60px 20px;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#1a1a1a,#000);
+padding:20px;
 }
 
-h1{
-font-size:40px;
-letter-spacing:2px;
+.hero h1{
+font-size:4rem;
+letter-spacing:4px;
 }
 
-p{
-color:#ccc;
+.hero p{
+margin-top:20px;
+font-size:1.2rem;
+color:#d4af37;
 }
 
 .btn{
 display:inline-block;
-margin:10px;
-padding:12px 20px;
-border-radius:25px;
+margin-top:25px;
+padding:14px 32px;
+background:#d4af37;
+color:#000;
 text-decoration:none;
-color:white;
-background:#c59d5f;
+font-weight:bold;
+border-radius:30px;
 }
 
 section{
-padding:40px 20px;
+padding:80px 10%;
+}
+
+.title{
 text-align:center;
+font-size:2.3rem;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-padding:20px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
-.card{
-background:#1c1c1c;
-padding:10px;
+.art-card{
+background:#111;
+border:1px solid #222;
+overflow:hidden;
 border-radius:10px;
 }
 
+.art-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.art-info{
+padding:20px;
+text-align:center;
+}
+
+.art-info h3{
+margin-bottom:10px;
+}
+
 .price{
-color:#c59d5f;
+color:#d4af37;
+font-size:1.1rem;
 font-weight:bold;
+}
+
+.certificate{
+background:#111;
+border:2px solid #d4af37;
+padding:40px;
+text-align:center;
+max-width:900px;
+margin:auto;
+border-radius:12px;
+}
+
+.social{
+text-align:center;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+padding:15px 30px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.instagram{
+background:#E1306C;
+color:white;
 }
 
 footer{
 text-align:center;
-padding:20px;
-color:#777;
-font-size:14px;
+padding:30px;
+background:#111;
+margin-top:50px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-<h1>GALIYARTSSTUDIO</h1>
-<p>Original Oil Paintings | Luxury Art Collection | Since 2014</p>
-
-<a class="btn" href="https://wa.me/96500000000">WhatsApp</a>
-<a class="btn" href="https://instagram.com/">Instagram</a>
+<div class="hero">
+<h1>Galiyartsstudio</h1>
+<p>Original Oil Paintings Since 2014</p>
+<a href="#gallery" class="btn">View Collection</a>
+</div>
 </header>
 
 <section>
-<h2>About</h2>
+<h2 class="title">About Galiyartsstudio</h2>
+
+<div class="about">
 <p>
-Luxury handmade oil paintings created with high precision and artistic detail.
-Each artwork is original and framed with premium quality materials.
+Founded in 2014, Galiyartsstudio specializes in highly detailed,
+museum-quality original oil paintings.
+
+Each artwork is hand-painted with professional techniques,
+carefully crafted over many hours to achieve depth, realism,
+and exceptional artistic quality.
+
+Every piece is an authentic original artwork and comes with
+a Certificate of Authenticity signed by the artist.
 </p>
+</div>
 </section>
 
-<section>
-<h2>Gallery</h2>
+<section id="gallery">
+<h2 class="title">Featured Collection</h2>
 
 <div class="gallery">
 
-<div class="card">
-<p>Painting 1</p>
-<p class="price">120 KWD / 390 USD</p>
+<div class="art-card">
+<img src="art1.jpg" alt="">
+<div class="art-info">
+<h3>Original Oil Painting</h3>
+<p>40 × 30 cm</p>
+<p class="price">180 KWD | $585 USD</p>
+</div>
 </div>
 
-<div class="card">
-<p>Painting 2</p>
-<p class="price">150 KWD / 490 USD</p>
+<div class="art-card">
+<img src="art2.jpg" alt="">
+<div class="art-info">
+<h3>Original Oil Painting</h3>
+<p>40 × 30 cm</p>
+<p class="price">180 KWD | $585 USD</p>
+</div>
 </div>
 
-<div class="card">
-<p>Painting 3</p>
-<p class="price">200 KWD / 650 USD</p>
+<div class="art-card">
+<img src="art3.jpg" alt="">
+<div class="art-info">
+<h3>Original Oil Painting</h3>
+<p>40 × 30 cm</p>
+<p class="price">180 KWD | $585 USD</p>
+</div>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>Authenticity</h2>
+<h2 class="title">Certificate of Authenticity</h2>
+
+<div class="certificate">
+<h3>Certificate of Authenticity</h3>
+
 <p>
-All artworks come with Certificate of Authenticity guaranteeing originality.
+This certificate confirms that the artwork purchased from
+Galiyartsstudio is an original hand-painted artwork created
+using professional oil painting techniques.
+
+Each piece is unique and accompanied by this certificate
+as proof of authenticity.
 </p>
+
+<br>
+
+<p><strong>Artist:</strong> Ghalya Hussain</p>
+<p><strong>Studio:</strong> Galiyartsstudio</p>
+</div>
+</section>
+
+<section>
+<h2 class="title">Contact & Orders</h2>
+
+<div class="social">
+
+<a class="whatsapp"
+href="https://wa.me/965XXXXXXXX">
+WhatsApp
+</a>
+
+<a class="instagram"
+href="https://instagram.com/galiyartsstudio">
+Instagram
+</a>
+
+</div>
 </section>
 
 <footer>
-© 2026 Galiyartsstudio - All Rights Reserved
+© 2026 Galiyartsstudio — All Rights Reserved
 </footer>
 
 </body>
