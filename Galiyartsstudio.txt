@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galiyartsstudio</title>
+
+<style>
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background:#0f0f0f;
+color:white;
+}
+
+header{
+padding:60px 20px;
+text-align:center;
+background:linear-gradient(135deg,#1a1a1a,#000);
+}
+
+h1{
+font-size:40px;
+letter-spacing:2px;
+}
+
+p{
+color:#ccc;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+background:#c59d5f;
+}
+
+section{
+padding:40px 20px;
+text-align:center;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:10px;
+border-radius:10px;
+}
+
+.price{
+color:#c59d5f;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#777;
+font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>GALIYARTSSTUDIO</h1>
+<p>Original Oil Paintings | Luxury Art Collection | Since 2014</p>
+
+<a class="btn" href="https://wa.me/96500000000">WhatsApp</a>
+<a class="btn" href="https://instagram.com/">Instagram</a>
+</header>
+
+<section>
+<h2>About</h2>
+<p>
+Luxury handmade oil paintings created with high precision and artistic detail.
+Each artwork is original and framed with premium quality materials.
+</p>
+</section>
+
+<section>
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<div class="card">
+<p>Painting 1</p>
+<p class="price">120 KWD / 390 USD</p>
+</div>
+
+<div class="card">
+<p>Painting 2</p>
+<p class="price">150 KWD / 490 USD</p>
+</div>
+
+<div class="card">
+<p>Painting 3</p>
+<p class="price">200 KWD / 650 USD</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Authenticity</h2>
+<p>
+All artworks come with Certificate of Authenticity guaranteeing originality.
+</p>
+</section>
+
+<footer>
+© 2026 Galiyartsstudio - All Rights Reserved
+</footer>
+
+</body>
+</html>
